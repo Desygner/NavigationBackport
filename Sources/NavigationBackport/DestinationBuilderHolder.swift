@@ -52,7 +52,6 @@ class DestinationBuilderHolder: ObservableObject {
         }
         possibleMirror = mirror.superclassMirror
       }
-      assertionFailure("No view builder found for type \(type(of: base ?? typedData))")
     }
     return AnyView(Image(systemName: "exclamationmark.triangle"))
   }
